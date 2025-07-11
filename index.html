@@ -1,0 +1,109 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <img src="{{ site.author.photo | default: 'https://sierramcnewwrites.wordpress.com/wp-content/uploads/2024/01/pxl_20230521_144841991-edit.jpg' }}" alt="{{ site.author.name }}" class="author-image">
+            <h1>{{ site.author.name }}</h1>
+            <p class="tagline">Writing our world, with magic</p>
+            <p>Writer & Pharmacist 🧪 | Fantasy Literature 📚 | Urban Fantasy Specialist ✨</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Recent Publications</h2>
+        
+        {% for publication in site.data.publications limit:3 %}
+        <div class="card">
+            <div style="position: relative;">
+                {% if publication.type == 'Poem' %}
+                    <span style="position: absolute; top: 0; right: 0; font-size: 1.5rem; opacity: 0.3;">📝</span>
+                {% elsif publication.type == 'Short Story' %}
+                    <span style="position: absolute; top: 0; right: 0; font-size: 1.5rem; opacity: 0.3;">📚</span>
+                {% endif %}
+                
+                <h3 style="font-size: 1.4rem; margin-bottom: 1rem; color: #2c3e50;">"{{ publication.title }}"</h3>
+                <p style="color: #9b59b6; font-weight: 500; margin-bottom: 0.5rem;">{{ publication.venue }} - {{ publication.issue }}</p>
+                <p style="color: #7f8c8d; margin-bottom: 1rem;">{{ publication.description }}</p>
+                
+                {% if publication.url != "" %}
+                <a href="{{ publication.url }}" target="_blank" style="color: #9b59b6; text-decoration: none; font-weight: 500;">View Publication</a>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="{{ '/publications' | relative_url }}" class="read-more" style="font-size: 1.1rem;">View All Publications →</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Current Endeavors</h2>
+        
+        <div class="content">
+            <h3 style="color: #2c3e50; margin-bottom: 1.5rem; font-size: 1.5rem; position: relative;">
+                Active Projects
+                <span style="position: absolute; top: -10px; right: 0; font-size: 1.5rem; opacity: 0.3;">🖋️📝</span>
+            </h3>
+            
+            {% for project in site.data.projects %}
+            <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 12px; padding: 1rem; margin-bottom: 1rem; border-left: 4px solid #9b59b6; position: relative; transition: transform 0.3s ease;" onmouseover="this.style.transform='translateX(5px)'" onmouseout="this.style.transform='translateX(0)'">
+                <span style="position: absolute; top: 0.5rem; right: 0.5rem; opacity: 0.5;">✨</span>
+                <strong>{{ project.title }}</strong>
+                <p style="margin: 0.5rem 0; color: #7f8c8d; font-size: 0.9rem;">{{ project.status }} | {{ project.genre }}</p>
+                <p style="margin: 0;">{{ project.description }}</p>
+                <p style="margin: 0.5rem 0 0 0; color: #8b4513; font-size: 0.9rem; font-style: italic;">{{ project.progress }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Latest Blog Posts</h2>
+        
+        {% for post in site.posts limit:3 %}
+        <div class="card">
+            <div class="post-meta">{{ post.date | date: "%B %d, %Y" }} • {% if post.category %}{{ post.category }}{% else %}Writing{% endif %}</div>
+            <h3 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <div class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</div>
+            <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
+        </div>
+        {% endfor %}
+        
+        {% if site.posts.size == 0 %}
+        <div class="content">
+            <p style="text-align: center; color: #7f8c8d; font-style: italic;">
+                📝 Blog posts coming soon! Check back for updates about my writing journey.
+            </p>
+        </div>
+        {% endif %}
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="{{ '/blog' | relative_url }}" class="read-more" style="font-size: 1.1rem;">View All Posts →</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div style="background: linear-gradient(135deg, #9b59b6, #8e44ad); color: white; border-radius: 25px; padding: 3rem; text-align: center; box-shadow: 0 15px 50px rgba(139, 69, 19, 0.2); position: relative; overflow: hidden;">
+            <span style="position: absolute; top: 1rem; right: 2rem; font-size: 2rem; opacity: 0.7;">📬✨</span>
+            <h2 style="color: white; margin-bottom: 1rem;">Stay Connected</h2>
+            <p style="opacity: 0.9; margin-bottom: 2rem;">Subscribe to my email newsletter for updates and thoughts about writing!</p>
+            <form style="display: flex; max-width: 400px; margin: 0 auto; gap: 1rem;" action="#" method="post">
+                <input type="email" style="flex: 1; padding: 0.8rem; border: none; border-radius: 5px; font-size: 1rem;" placeholder="Enter your email" required>
+                <button type="submit" style="background: #2c3e50; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 5px; cursor: pointer; font-size: 1rem; transition: background 0.3s ease;">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,66 @@
+# Site settings
+title: Sierra McNew
+email: your-email@example.com
+description: >-
+  Writer and pharmacist fueled by fantasy books and decaf mochas.
+  Writing our world, with magic.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+
+# Author information
+author:
+  name: Sierra McNew
+  bio: Writer and pharmacist fueled by fantasy books and decaf mochas
+  photo: /assets/images/author-photo.jpg
+
+# Social media (optional)
+# twitter_username: yourtwitter
+# github_username: yourgithub
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Sierra McNew"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

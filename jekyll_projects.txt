@@ -1,0 +1,18 @@
+- title: "🏙️ MFA Thesis Novel"
+  status: "Querying"
+  genre: "Adult Urban Fantasy"
+  description: "Currently querying my adult urban fantasy manuscript, developed during my MFA program - where magic meets modern city life."
+  progress: "Complete - seeking representation"
+
+- title: "🌟 YA Urban Fantasy"
+  status: "Drafting"
+  genre: "Young Adult Urban Fantasy"
+  description: "Drafting my next novel, a young adult urban fantasy that explores themes of identity and belonging in a world where magic is hidden in plain sight."
+  progress: "First draft in progress"
+
+# Add new projects here following the same format
+# - title: "Project Title with emoji"
+#   status: "Drafting" # or "Querying", "Revising", "Complete", etc.
+#   genre: "Genre"
+#   description: "Description of the project"
+#   progress: "Current status details"

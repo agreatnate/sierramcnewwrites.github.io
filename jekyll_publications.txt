@@ -1,0 +1,24 @@
+- title: "Blue Yarn, Garlic, and Memories"
+  type: "Poem"
+  venue: "Eye Contact Literary Magazine"
+  issue: "Spring 2024"
+  description: "Featured in the horror-themed edition of Seton Hill University's literary and art magazine."
+  url: "https://sites.google.com/setonhill.edu/eyecontact/the-magazine/archive?authuser=0"
+  date: "2024-03-01"
+
+- title: "Burn it All"
+  type: "Short Story"
+  venue: "Grub Street Literary Magazine"
+  issue: "Volume 74"
+  description: "Short story published in Towson University's award-winning literary magazine."
+  url: ""
+  date: "2024-02-01"
+
+# Add new publications here following the same format
+# - title: "Your New Publication Title"
+#   type: "Short Story" # or "Poem", "Novel", "Essay", etc.
+#   venue: "Publication Name"
+#   issue: "Issue/Volume Info"
+#   description: "Brief description of the work"
+#   url: "https://link-to-publication.com" # leave empty if no link
+#   date: "YYYY-MM-DD"

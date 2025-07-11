@@ -1,0 +1,61 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">About the Writer</h2>
+        <div class="content" style="position: relative;">
+            <span style="position: absolute; top: -10px; right: 2rem; font-size: 2rem; opacity: 0.3;">🧪⚗️</span>
+            <span style="position: absolute; bottom: -10px; left: 2rem; font-size: 2rem; opacity: 0.3;">🏰🌟</span>
+            
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="{{ site.author.photo | default: 'https://sierramcnewwrites.wordpress.com/wp-content/uploads/2024/01/pxl_20230521_144841991-edit.jpg' }}" alt="{{ site.author.name }}" class="author-image">
+            </div>
+            
+            <p style="font-size: 1.2rem; color: #7f8c8d; text-align: center; margin-bottom: 2rem;">
+                Sierra McNew is a writer and pharmacist fueled by fantasy books and decaf mochas ☕. With a unique blend of scientific precision and creative imagination, she crafts stories that bridge the gap between the everyday and the extraordinary, weaving magic into our modern world. When she's not mixing potions in the pharmacy, she's conjuring worlds where magic lurks around every corner. 🌟
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div class="card">
+                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">🧪 The Pharmacist</h3>
+                    <p style="color: #7f8c8d;">
+                        By day, Sierra works as a pharmacist, ensuring patients receive the medications they need. This scientific background brings a unique perspective to her writing, especially when crafting magical systems that feel both fantastical and grounded in reality.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">✍️ The Writer</h3>
+                    <p style="color: #7f8c8d;">
+                        Sierra specializes in urban fantasy, particularly stories that explore what happens when magic meets the modern world. Her work often examines themes of identity, belonging, and the extraordinary hiding in plain sight.
+                    </p>
+                </div>
+                
+                <div class="card">
+                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">🎓 Education</h3>
+                    <p style="color: #7f8c8d;">
+                        Sierra holds an MFA in Creative Writing, where she developed her thesis novel - an adult urban fantasy currently being queried. She continues to hone her craft through workshops, writing groups, and constant reading.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Writing Philosophy</h2>
+        <div class="content">
+            <blockquote style="font-style: italic; font-size: 1.1rem; color: #8b4513; border-left: 4px solid #9b59b6; padding-left: 1rem; margin: 2rem 0;">
+                "Magic isn't just about spells and potions - it's about seeing the world differently, finding wonder in the ordinary, and believing that transformation is always possible."
+            </blockquote>
+            
+            <p style="color: #7f8c8d; margin-bottom: 1rem;">
+                Sierra believes that the best fantasy stories are those that help us see our own world with fresh eyes. Her work explores how magic might exist alongside science, how ancient powers might adapt to modern technology, and how ordinary people might discover extraordinary abilities within themselves.
+            </p>
+            
+            <p style="color: #7f8c8d;">
+                Drawing from her background in both the sciences and the arts, Sierra creates stories that are both imaginative and grounded, magical yet believable. She's particularly interested in urban fantasy that doesn't just drop magic into our worl
